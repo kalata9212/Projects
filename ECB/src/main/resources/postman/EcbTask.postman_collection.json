@@ -1,0 +1,60 @@
+{
+  "info": {
+    "_postman_id": "56d08f14-dd47-4084-91a9-d33cdb7575d0",
+    "name": "EcbTask",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "SYNC_ECB_DATA_ON_DEMAND",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/currency-rate/sync",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "currency-rate",
+            "sync"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "FETCH_DATA_BY_PARAMS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/currency-rate/rates?date=2020-03-26&currency=BGN",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "currency-rate",
+            "rates"
+          ],
+          "query": [
+            {
+              "key": "date",
+              "value": "2020-03-26"
+            },
+            {
+              "key": "currency",
+              "value": "BGN"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
